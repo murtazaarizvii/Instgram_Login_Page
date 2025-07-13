@@ -1,0 +1,131 @@
+* {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 350px;
+    }
+
+    .box {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 40px 40px 20px;
+      text-align: center;
+    }
+
+    .box.signup {
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    h1 {
+      font-family: 'Grand Hotel', cursive;
+      font-size: 48px;
+      margin-bottom: 30px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      background-color: #fafafa;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #3897f0;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .or-divider {
+      margin: 20px 0;
+      position: relative;
+      text-align: center;
+    }
+
+    .or-divider::before, .or-divider::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 40%;
+      height: 1px;
+      background: #ccc;
+    }
+
+    .or-divider::before {
+      left: 0;
+    }
+
+    .or-divider::after {
+      right: 0;
+    }
+
+    .or-divider span {
+      color: #999;
+      font-weight: bold;
+      background: #fff;
+      padding: 0 10px;
+    }
+
+    .facebook-login {
+      color: #385185;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .facebook-login img {
+      height: 16px;
+    }
+
+    .forgot {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+
+    .forgot a {
+      color: #00376b;
+      text-decoration: none;
+    }
+
+    .signup a {
+      text-decoration: none;
+      color: #3897f0;
+      font-weight: bold;
+    }
+
+    @media (max-width: 400px) {
+      .box {
+        padding: 30px 20px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+    }
